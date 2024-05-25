@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src = "index.js" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
     <title>Etch A Sketch</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="title"><h1>Etch A Sketch</h1></div>
-    <div class="input-cont">
-        <input type="number">
-        <button class="adjust-size">Change grid size</button>
+    <div class="mainscreen">
+      <div class="half-one">
+        <div class="sidebar">
+          <input class="color-picker" type="color" />
+          <button class="reset">
+            <img src="img/close-mp3-music-svgrepo-com.svg" alt="Clear Board" />
+          </button>
+          <button class="eraser-mode">
+            <img src="img/eraser-remove-svgrepo-com.svg" alt="Eraser Mode" />
+          </button>
+          <button class="color-mode">
+            <img src="img/pen-new-square-svgrepo-com.svg" alt="Color Mode" />
+          </button>
+          <div class="cont-slider">
+            <input type="range" min="2" max="100" value="16" class="slider" />
+            <div class="slider-text">16x16</div>
+          </div>
+        </div>
+      </div>
+      <div class="half-two">
+        <div class="container">
+          <div class="container-grids"></div>
+        </div>
+      </div>
     </div>
-    <div class="container">
-        <div class="container-grids"></div>
-    </div>
-</body>
+  </body>
 </html>

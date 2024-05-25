@@ -1,30 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Danfo&display=swap");
 body {
-    background-color: beige;
+  font-family: "Danfo", serif;
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(112, 27, 240);
+  border: 2px solid black;
+}
+.color-mode {
+  background-color: crimson;
+}
+.cont-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: crimson;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+button > img {
+  width: 80px;
+  height: 80px;
+}
+.color-picker {
+  background-color: rgba(112, 27, 240);
+  border: none;
+  width: 80px;
+  height: 80px;
+}
+.mainscreen {
+  display: flex;
+}
+.half-one {
+  width: 37.5%;
+  display: flex;
+  justify-content: start;
 }
 .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: crimson;
+  font-size: 32px;
 }
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container-grids {
-    height: 500px;
-    width: 500px;
-    display: flex;
-    flex-wrap: wrap;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .squere {
-    background-color: white;
-    box-sizing: border-box;
+  background-color: rgba(112, 27, 240, 0.633);
+  box-sizing: border-box;
 }
-.input-cont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 16px;
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 16px;
 }
