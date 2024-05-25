@@ -1,0 +1,30 @@
+body {
+    background-color: beige;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-grids {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.squere {
+    background-color: white;
+    box-sizing: border-box;
+}
+.input-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
